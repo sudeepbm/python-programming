@@ -53,3 +53,4 @@ c=30
 a,b,c=c,a,b
 print(f"a: {a}\tb: {b}\tc: {c}")
 
+# checking if the number is even or odd
