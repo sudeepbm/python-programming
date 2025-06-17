@@ -105,3 +105,28 @@ a,b,c=c,a,b
 print(f"a: {a}\tb: {b}\tc: {c}")
 
 # checking if the number is even or odd
+
+
+
+# Day-3                     Date: 16-06-2025
+
+# Pattern Programming
+
+print("*")
+
+
+print("*")
+print("*")
+
+
+print("*")
+print("*")
+print("*")
+
+for i in range(3):
+    print("*")
+
+
+n=int(input("n: "))
+for i in range(n):
+    print("*")
