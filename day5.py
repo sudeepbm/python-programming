@@ -1,3 +1,5 @@
+# Day-5                     Date: 18-06-2025
+
 row=int(input("Enter number of rows: "))
 col=int(input("Enter number of columns: "))
 for i in range(row):
