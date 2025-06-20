@@ -208,3 +208,6 @@ for i in range(row):
         print(val, end=" ")
         val-=1
     print()  # Move to the next line after each row is printed
+
+
+# Day-6                     Date: 19-06-2025
