@@ -210,6 +210,7 @@ for i in range(row):
     print()  # Move to the next line after each row is printed
 
 
+
 # Day-6                     Date: 19-06-2025
 
 
@@ -431,3 +432,164 @@ for i in range(n):
     if val<65:
         val=68
     print()
+
+# 8. Write a program to print the following pattern:
+# D
+# D C
+# D C B
+# D C B A
+
+n=4
+val=ord("D")
+for i in range(n):
+    for j in range(n):
+        if i>=j:
+            print(chr(val), end=" ")
+        else:
+            print(" ", end=" ")
+        val-=1
+    if val<ord("A"):
+        val=ord("D")
+    print()
+
+# 9. Write a program to print the following pattern:
+# 1 1 1 1
+#   2 2 2
+#     3 3
+#       4
+
+n=4
+val=1
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(val,end=" ")
+        else:
+            print(" ",end=" ")
+        if val>9:
+            val=1
+    val+=1
+    print()
+
+# 10. Write a program to print the following pattern:
+# 1 2 3 4
+#   1 2 3
+#     1 2
+#       1
+
+n=4
+val=1
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(val,end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    val=1
+    print()
+
+# 11. Write a program to print the following pattern:
+# 4 4 4 4
+#   3 3 3
+#     2 2
+#       1
+
+n=4
+val=4
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(val,end=" ")
+        else:
+            print(" ",end=" ")
+    val-=1
+    print()
+
+# 12. Write a program to print the following pattern:
+# 4 3 2 1
+#   4 3 2
+#     4 3
+#       4
+
+n=4
+val=4
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(val,end=" ")
+            val-=1
+        else:
+            print(" ",end=" ")
+    print()
+    val=4
+
+# 13. Write a program to print the following pattern:
+#  A A A A
+#    B B B
+#      C C
+#        D
+
+n=4
+val=ord("A")
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+    val+=1
+    print()
+
+# 14. Write a program to print the following pattern:
+#  A B C D
+#    A B C
+#      A B
+#        A
+
+n=4
+val=ord("A")
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(chr(val),end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    print()
+    val=ord("A")
+
+# 15. Write a program to print the following pattern:
+# D D D D
+#   C C C
+#     B B
+#       A
+
+n=int(input("n: "))
+val=ord("A")+n-1
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+    val-=1
+    print()
+
+# 16. Write a program to print the following pattern:
+# D C B A
+#   D C B
+#     D C
+#       D
+
+n=int(input("n: "))
+val=ord("A")+n-1
+for i in range(n):
+    for j in range(n):
+        if i<=j:
+            print(chr(val),end=" ")
+            val-=1
+        else:
+            print(" ",end=" ")
+    print()
+    val=ord("A")+n-1
