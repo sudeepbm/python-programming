@@ -114,8 +114,8 @@ for i in range(n):
             print(val,end=" ")
         else:
             print(" ",end=" ")
-    val-=1
     print()
+    val-=1
 
 # 4. Write a program to print the following pattern:
 #       3
@@ -248,3 +248,153 @@ for i in range(n):
         val+=1
     print()
     val=1
+
+# 12. Write a program to print the following pattern:
+# 1 2 3
+# 4 5
+# 6
+
+n=int(input("n: "))
+val=1
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(val,end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    print()
+
+# 13. Write a program to print the following pattern:
+# A B C
+# A B
+# A
+
+n=int(input("n: "))
+val=ord("A")
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+        val+=1
+    print()
+    val=ord("A")
+
+# 14. Write a program to print the following pattern:
+# A A A
+# B B
+# C
+
+n=int(input("n: "))
+val=ord("A")
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+    val+=1
+    print()
+
+# 15. Write a program to print the following pattern:
+# 3 2 1
+# 3 2
+# 3
+
+n=int(input("n: "))
+val=n
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(val,end=" ")
+        else:
+            print(" ",end=" ")
+        val-=1
+    print()
+    val=n
+
+# 16. Write a program to print the following pattern:
+# C B A
+# C B
+# C
+
+n=int(input("n: "))
+val=ord("A")+n-1
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+        val-=1
+    print()
+    val=ord("A")+n-1
+
+# 17. Write a program to print the following pattern:
+# Z Y X
+# Z Y
+# Z
+
+n=int(input("n: "))
+val=ord("Z")
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+        val-=1
+    print()
+    val=ord("Z")
+
+# 18. Write a program to print the following pattern:
+# Z Z Z
+# Y Y
+# X
+
+n=int(input("n: "))
+val=ord("Z")
+for i in range(n):
+    for j in range(n):
+        if (i+j)<=n-1:
+            print(chr(val),end=" ")
+        else:
+            print(" ",end=" ")
+    val-=1
+    print()
+
+# 19. Write a program to print the following pattern:
+#       1
+#     2
+#   3
+# 4
+
+n=int(input("n: "))
+val=1
+for i in range(n):
+    for j in range(n):
+        if (i+j)==n-1:
+            print(val,end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    print()
+
+# 20. Write a program to print the following pattern:
+#       D
+#     C
+#   B
+# A
+
+n=int(input("n: "))
+val=ord("A")+n-1
+for i in range(n):
+    for j in range(n):
+        if (i+j)==n-1:
+            print(chr(val),end=" ")
+            val-=1
+        else:
+            print(" ",end=" ")
+    print()
