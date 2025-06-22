@@ -594,6 +594,74 @@ for i in range(n):
     print()
     val=ord("A")+n-1
 
+# 17. Write a program to print the following pattern:
+# 1
+#   2
+#     3
+#       4
+
+n=int(input("n: "))
+val=1
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(val,end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    print()
+
+# 18. Write a program to print the following pattern:
+# 4
+#   3
+#     2
+#       1
+
+n=int(input("n: "))
+val=n
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(val,end=" ")
+            val-=1
+        else:
+            print(" ",end=" ")
+    print()
+
+# 19. Write a program to print the following pattern:
+# A
+#   B
+#     C
+#       D
+
+n=int(input("n: "))
+val=ord("A")
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(chr(val),end=" ")
+            val+=1
+        else:
+            print(" ",end=" ")
+    print()
+
+# 20. Write a program to print the following pattern:
+# D
+#   C
+#     B
+#       A
+
+n=int(input("n: "))
+val=ord("A")+n-1
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(chr(val),end=" ")
+            val-=1
+        else:
+            print(" ",end=" ")
+    print()
+
 
 
 # Day-8                     Date: 21-06-2025
