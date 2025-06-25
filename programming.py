@@ -1208,7 +1208,7 @@ for i in range(n):
 
 # Day-10                     Date: 24-06-2025
 
-# Number Series
+# Number Programming.
 
 # Example 1
 n=123
@@ -1305,7 +1305,7 @@ if sum==product:
     print("SPY Nmuber")
 else:
     print("Not a SPY Number")
-    
+
 # WAP to check whether the sum of the digits from a given number is divisor for the same number or not. (Assignment)
 n=abs(int(input("n: ")))
 real_n=n
@@ -1315,6 +1315,6 @@ while n!=0:
     sum=sum+digit
     n=n//10
 if real_n%sum==0:
-    print("The sum of the digits of the given number is divisor for the same number.")
+    print("divisor")
 else:
-    print("The sum of the digits of the given number is not the divisor for the same number.")
+    print("not a divisor")
