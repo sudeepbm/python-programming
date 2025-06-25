@@ -76,6 +76,6 @@ while n!=0:
     sum=sum+digit
     n=n//10
 if real_n%sum==0:
-    print("The sum of the digits of the given number is divisor for the same number.")
+    print("divisor")
 else:
-    print("The sum of the digits of the given number is not the divisor for the same number.")
+    print("not a divisor")
