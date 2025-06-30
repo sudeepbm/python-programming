@@ -1572,3 +1572,99 @@ else:
 
 
 # WAP to print max digit and min digit number from a given number.
+
+# Answers
+#wap to print rev of sum of the digits of the given number
+# n=int(input("n: "))
+# sum=0
+# rev=0
+# while n>0:
+#     digit=n%10
+#     sum=digit+sum
+#     n=n//10
+
+# temp=sum
+# while temp>0:
+#     digit=temp%10
+#     rev=rev*10+digit
+#     temp=temp//10
+# print(rev)
+
+#wap to check the product of the digit in the given number is spy number or not 
+# n=int(input("n: "))
+# sum=0
+# product=1
+# n1=n
+# while n1>0:
+#     digit=n1%10
+#     sum=digit+sum
+#     product=product*digit
+#     n1=n1//10
+# if sum==product:
+#     print("spy number")
+# else:
+#     print("not a spy number")
+
+#wap to check sum of odd digits in a given number is strong or not
+# n=int(input("n: "))
+# sum=0
+# while n>0:
+#     digit=n%10
+#     if digit%2!=0:
+#         sum=digit+sum
+#     n=n//10
+
+# sum_fact=0
+# temp=sum
+# while temp>0:
+#     digit=temp%10
+#     fact=1
+#     start=1
+#     while start<=digit:
+#         fact*=start
+#         start+=1
+
+#     sum_fact=sum_fact+fact
+#     temp=temp//10
+
+# if sum_fact==sum:
+#     print("strong number")
+# else:
+#     print("Not a strong number")
+
+#wap to check fact of given number is pallindrome
+
+# n=int(input("n: "))
+# n1=n
+# start=1
+# fact=1
+# while start<=n:
+#     fact=fact*start
+#     start+=1
+
+# temp=fact
+# rev=0
+# while temp>0:
+#     digit=temp%10
+#     rev=rev*10+digit
+#     temp=temp//10
+
+# if rev==fact:
+#     print("pallindrome")
+# else:
+#     print("not a pallindrome")
+
+#wap to print max and min digit from a given number
+n=int(input("n: "))
+max_digit=0
+min_digit=9
+while n>0:
+    digit=n%10
+    if digit>max_digit:
+        max_digit=digit
+    if digit<min_digit:
+        min_digit=digit
+
+    n=n//10
+print("max number: ",max_digit)
+print("min digit: ",min_digit)
