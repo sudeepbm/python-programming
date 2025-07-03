@@ -1989,3 +1989,43 @@ while start<=end:
     if start%n1==0 and start%n2==0:
         print(start)
     start+=1
+
+# Assignment.
+
+# LCM of given 2 numbers.
+# logic 1
+n1=int(input("n1: "))
+n2=int(input("n2: "))
+start=1
+end=n1
+gcd=0
+# while start<=n1 and start<=n2:            # This can also be used
+while start<=end:
+    if n1%start==0 and n2%start==0:
+        # if start>gcd:             # as the loop is continuing and the numbers are in increasing (start value) order, we can use the latest value of start as gcd.
+        #     gcd=start
+        gcd=start
+    start+=1
+lcm=(n1*n2)//gcd
+print(lcm)
+
+# logic 2
+n1=int(input("n1: "))
+n2=int(input("n2: "))
+start=1
+c=1
+while c>0:
+    if start%n1==0 and start%n2==0:
+        print(start)
+        c=0
+    start+=1
+
+# logic 3
+n1=int(input("n1: "))
+n2=int(input("n2: "))
+start=1
+while True:
+    if start%n1==0 and start%n2==0:
+        print(start)
+        break
+    start+=1
